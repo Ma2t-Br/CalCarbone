@@ -1,0 +1,32 @@
+.sectionNews {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+    .sectionNews img {
+        width: auto;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 20px 20px 50px gray, -20px -20px 50px white;
+    }
+
+    .sectionNews .text-left {
+        margin: auto 0px auto 120px;
+        text-align: justify;
+        width: 700px;
+        height: 200px;
+    }
+    .sectionNews .text-right {
+        margin: auto 120px auto 0px;
+        text-align: justify;
+        width: 700px;
+        height: 200px;
+    }
+
+    .sectionNews p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
