@@ -18,13 +18,23 @@
         text-align: justify;
         width: 700px;
         height: 200px;
+        transition: 0.5s;
     }
+        .sectionNews:hover .text-left {
+            margin: auto 0px auto 100px;
+            transition: 0.5s;
+        }
     .sectionNews .text-right {
         margin: auto 120px auto 0px;
         text-align: justify;
         width: 700px;
         height: 200px;
+        transition: 0.5s;
     }
+        .sectionNews:hover .text-right {
+            margin: auto 100px auto 0px;
+            transition: 0.5s;
+        }
 
     .sectionNews p {
         overflow: hidden;

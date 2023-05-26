@@ -2,27 +2,32 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/itim" rel="stylesheet">
     <title>Calcarbone - Accueil</title>
 </head>
 <body>
     <header>
-        <img src="../img/feuille_logo.png" width="50" height="50">
-        <h1>Calcarbone</h1>
-        <nav>
+        <div id="Logo-Comp">
+            <img src="../Sources/Logos/feuille_logo.png" width="50" height="50">
+            <h1 class="Logo">Calcarbone</h1>
+        </div>
+        <div id="Menu_langue">
+            <nav class="navi">
             <ul>
-                <li><a href="./accueil.html">Accueil</a></li>
+                <li><a href="./accueil.html" id="EnCours">Accueil</a></li>
                 <li><a href="./informations.html">S'informer</a></li>
                 <li><a href="./calculateur.html">Calculateur</a></li>
             </ul>
-        </nav>
-        <img src="../img/france.png" width="50" height="50">
+            </nav>
+            <img class="Icon-Menu" src="../Sources/Logos/Logo_Menu.svg.png" alt="Menu" onclick="">
+            <img class="langue" src="../Sources/Logos/france.png">
+        </div>
     </header>
     <section class="sectionNews">
         <a href="https://www.20minutes.fr/planete/4037863-20230522-transition-climatique-decarboner-economie-oui-prix">
-            <img src="../Sources/IMG_Act1.png" alt="Actualité 1">
+            <img src="../Sources/Articles/IMG_Act1.png" alt="Actualité 1">
         </a>
         <div class="text-left">
             <h3>Transition climatique : Décarboner l’économie, oui, mais à quel prix ?</h3>
@@ -38,12 +43,12 @@
             </p>
         </div>
         <a href="https://www.20minutes.fr/planete/4033201-20230418-climat-feu-vert-eurodeputes-reforme-marche-carbone">
-            <img src="../Sources/IMG_Act2.png" alt="Actualité 2">
+            <img src="../Sources/Articles/IMG_Act2.png" alt="Actualité 2">
         </a>
     </section>
     <section class="sectionNews">
         <a href="https://www.20minutes.fr/planete/4037863-20230522-transition-climatique-decarboner-economie-oui-prix">
-            <img src="../Sources/IMG_Act3.png" alt="Actualité 3">
+            <img src="../Sources/Articles/IMG_Act3.png" alt="Actualité 3">
         </a>
         <div class="text-left">
             <h3>Changement climatique : Les Pays-Bas dévoilent des mesures d’un montant de 28 milliards d’euros</h3>
@@ -62,12 +67,12 @@
             </p>
         </div>
         <a href="https://www.20minutes.fr/planete/4030942-20230403-sobriete-entreprises-lever-pied-volant-teletravailler-deux-options-economiser-energie">
-            <img src="../Sources/IMG_Act4.png" alt="Actualité 4">
+            <img src="../Sources/Articles/IMG_Act4.png" alt="Actualité 4">
         </a>
     </section>
     <section class="sectionNews">
         <a href="https://www.20minutes.fr/planete/environnement/4026677-20230306-action-empreinte-carbone-numerique-pourrait-tripler-2050-france">
-            <img src="../Sources/IMG_Act5.png" alt="Actualité 5">
+            <img src="../Sources/Articles/IMG_Act5.png" alt="Actualité 5">
         </a>
         <div class="text-left">
             <h3>Sans action, l’empreinte carbone du numérique pourrait tripler d’ici 2050 en France</h3>
@@ -88,8 +93,9 @@
             </p>
         </div>
         <a href="Droits d’émission : Le prix de la tonne de carbone en Europe dépasse les 100 euros pour la première fois">
-            <img src="../Sources/IMG_Act6.png" alt="Actualité 6">
+            <img src="../Sources/Articles/IMG_Act6.png" alt="Actualité 6">
         </a>
     </section>
+    <footer></footer>
 </body>
 </html>
