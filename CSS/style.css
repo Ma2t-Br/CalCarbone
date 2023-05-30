@@ -32,15 +32,14 @@ header{
         font-family: 'Itim', sans-serif;
     }
 
-    .navi{
+    .navi_haut{
         width: 355px;
-        text-decoration: none;
         position: relative;
         bottom: 5px;
         margin-right: 35px;
     }
 
-        .navi ul{
+        .navi_haut ul{
             display: flex;
             justify-content: space-between;
             list-style-type: none;
@@ -51,16 +50,16 @@ header{
             padding: 0;
         }
 
-        .navi ul li{
+        .navi_haut ul li{
             padding: 5px 10px 5px 10px;
         }
 
-        .navi ul li:hover{
+        .navi_haut ul li:hover{
             box-shadow: 3px 3px 7px black;
             border-radius: 30px;
         }
 
-        .navi a{
+        .navi_haut a{
             text-decoration: none;
             color: black;
         }
@@ -100,12 +99,52 @@ footer {
     width: auto;
     background-color: white;
     box-shadow: 0 -3px 10px black;
-    top: 20px;
+    top: 25px;
 }
+    .navi_bas{
+        position: relative;
+        left: 28px;
+        height: 80px;
+        top: 13px;
+    }
 
-    footer a {
-        text-decoration: none;
-        color: rgba(26, 188, 156, 1);
+        .navi_bas ul{
+            list-style-type: none;
+            font-family: 'Itim', sans-serif;
+            font-size: 21px;
+            margin: 0;
+        }
+
+        .navi_bas a {
+            text-decoration: none;
+            color: rgba(26, 188, 156, 1);
+        }
+
+        .navi_bas ul li{
+            padding: 5px 10px 5px 10px;
+        }
+
+        .navi_bas ul li:hover{
+            box-shadow: 3px 3px 7px black;
+            border-radius: 30px;
+        }
+    
+    .copyright{
+        position: relative;
+        top: 69px;
+        height: 30px;
+    }
+
+        .copyright p{
+            font-family: 'Itim', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+    .logo_efrei{
+        height: 60px;
+        padding: 22px 25px 0 0;
     }
 
 @media screen and (max-width: 1000px) {
