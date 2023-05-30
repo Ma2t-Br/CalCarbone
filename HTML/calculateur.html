@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://fonts.cdnfonts.com/css/itim" rel="stylesheet">
     <title>CalCarbone - En Savoir Plus</title>
+    <script src="../JS/script.js"></script>
 </head>
 <body>
     <header>
         <div id="Logo-Comp">
-            <img src="../Sources/Logos/feuille_logo.png" width="50" height="50">
+            <img src="../Sources/Logos/feuille_logo.png" width="50" height="50" alt="">
             <h1 class="Logo">Calcarbone</h1>
         </div>
         <div id="Menu_langue">
@@ -21,10 +22,131 @@
                 <li><a href="./calculateur.html" id="EnCours">Calculateur</a></li>
             </ul>
             </nav>
-            <img class="Icon-Menu" src="../Sources/Logos/Logo_Menu.svg.png" alt="Menu" onclick="">
-            <img class="langue" src="../Sources/Logos/france.png">
+            <img class="langue" src="../Sources/Logos/france.png" alt="Langage">
         </div>
     </header>
+
+    <section class="calculateur">
+        <h3 class="calc-title">Calculer votre empreinte carbone</h3>
+        <div>
+            <form method="post" name="ajoutPWD" action="#" class="calc-forms" id="addPWD" onsubmit="return false">
+                <div class="calc-informations">
+                    <h3>Quels transports utilisez vous quotidiennement ?</h3>
+                    
+                    <div class="calc-line">
+                        <label for="tgv">TGV</label>
+                        <div>
+                            <input type="number" id="tgv" name="tgv" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                    <div class="calc-line">
+                        <label for="tram">Tramway</label>
+                        <div>
+                            <input type="number" id="tram" name="tram" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                    <div class="calc-line">
+                        <label for="metro">Métro</label>
+                        <div>
+                            <input type="number" id="metro" name="metro" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                    <div class="calc-line"> 
+                        <label for="intercite">Intercité</label>
+                        <div>
+                            <input type="number" id="intercite" name="intercite" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                    <div class="calc-line">    
+                        <label for="moto">Moto</label>
+                        <div>
+                            <input type="number" id="moto" name="moto" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                    <div class="calc-line">
+                        <label for="rer">RER</label>
+                        <div>
+                            <input type="number" id="rer" name="rer" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                    <div class="calc-line">
+                        <label for="autocar">Autocar</label>
+                        <div>
+                            <input type="number" id="autocar" name="autocar" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                    <div class="calc-line">
+                        <label for="ter">TER</label>
+                        <div>
+                            <input type="number" id="ter" name="ter" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                    <div class="calc-line">
+                        <label for="scooter">Scooter / Moto légère</label>
+                        <div>
+                            <input type="number" id="scooter" name="scooter" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                    <div class="calc-line">
+                        <label for="bus">Bus</label>
+                        <div>
+                            <input type="number" id="bus" name="bus" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                        
+                    </div>
+                    <div class="calc-line">
+                        <label for="voiture">Voiture</label>
+                        <div>
+                            <input type="number" id="voiture" name="voiture" min="0" value="0">
+                            <i>Km</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc-submit">
+                    <div class="calc-submitCard">
+                        <h3>Pour aller où ?</h3>
+                        <div class="calc-options">
+                            <select name="trajet">
+                                <option selected="selected" disabled value="">--Veuillez choisir la catégorie--</option>
+                                <option value="Maison" onclick="discover(false)">Maison</option>
+                                <option value="Travail" onclick="discover(false)">Travail</option>
+                                <option value="Vacance" onclick="discover(false)">Vacance</option>
+                                <option value="Autre" onclick="discover(true)">Autre</option>
+                            </select>
+                            <input type="text" class="calc-destinationAutre" name="autre">
+                        </div>
+                        <div>
+                            <input class="btn" type="submit" value="Ajouter" onclick="submit()">
+                            <input class="btn" type="reset" value="Supprimer" onclick="supprimer()">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <main class="box calculateur">
+        <h3>Estimation de votre empreinte carbone pour :</h3>
+        <table id="sec-tab-pwd" width="100%">
+        <thead>
+            <tr class="mfb">
+                <th>Sur un trajet</th>
+                <th>Sur une semaine</th>
+                <th>Sur un mois</th>
+                <th>Sur un an</th>
+            </tr>
+        </thead>
+        </table>
+    </main>
     <footer>
         <nav class="navi_bas">
             <ul>

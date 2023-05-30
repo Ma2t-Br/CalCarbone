@@ -1,0 +1,60 @@
+.calculateur {
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+    .calculateur .calc-forms{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .calculateur .calc-title {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .calculateur .calc-informations {
+        width: 35%;
+        margin-right: 10px;
+    }
+        .calculateur .calc-informations .calc-line{
+            justify-content: space-between;
+            display: flex;
+            margin: 5px 0px;
+        }
+
+            .calculateur input{
+                background-color: rgba(26, 188, 156, 0.5);
+                border: 0px;
+                border-radius: 5px;
+            }
+
+    .calculateur .calc-submit {
+        width: 50%;
+        margin-left: 20px;
+        display: grid;
+    }
+
+        .calculateur .calc-submit .calc-submitCard {
+            height: 100px;
+            width: 380px;
+            margin: auto;
+        }
+
+        .calculateur .calc-submit .calc-destinationAutre {
+            display: none;
+        }
+
+        .calculateur .calc-submit .calc-options{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .calculateur .calc-submit .btn {
+            padding: 2px;
+            margin: 10px 5px 0 0;
+        }
