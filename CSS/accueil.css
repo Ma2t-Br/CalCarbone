@@ -42,3 +42,32 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+@media screen and (max-width: 1000px) {
+    
+    .sectionNews {
+        display: grid;
+    }
+        .sectionNews:hover .text-right {
+            margin: auto;
+        }
+
+        .sectionNews:hover .text-left {
+            margin: auto;
+        }
+
+        .sectionNews img {
+            height: auto;
+            width: 100%;
+        }
+
+        .sectionNews .text-left {
+            margin: auto;
+            width: 340px;
+        }
+
+        .sectionNews .text-right {
+            margin: auto;
+            width: 340px;
+        }
+}
