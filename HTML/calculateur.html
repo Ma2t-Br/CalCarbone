@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <link href="https://fonts.cdnfonts.com/css/itim" rel="stylesheet">
-    <title>CalCarbone - En Savoir Plus</title>
+    <title>CalCarbone - Calculateur</title>
     <script src="../JS/script.js"></script>
 </head>
 <body>
@@ -29,7 +29,7 @@
     <section class="calculateur">
         <h3 class="calc-title">Calculer votre empreinte carbone</h3>
         <div>
-            <form method="post" name="ajoutPWD" action="#" class="calc-forms" id="addPWD" onsubmit="return false">
+            <form method="post" name="Calculate" action="#" class="calc-forms" id="Calculate" onsubmit="return false">
                 <div class="calc-informations">
                     <h3>Quels transports utilisez vous quotidiennement ?</h3>
                     
@@ -123,10 +123,10 @@
                                 <option value="Vacance" onclick="discover(false)">Vacance</option>
                                 <option value="Autre" onclick="discover(true)">Autre</option>
                             </select>
-                            <input type="text" class="calc-destinationAutre" name="autre">
+                            <input type="text" class="calc-destinationAutre" name="NameAutre" placeholder="Type de trajet">
                         </div>
                         <div>
-                            <input class="btn" type="submit" value="Ajouter" onclick="submit()">
+                            <input class="btn" type="submit" value="Ajouter" onclick="generer()">
                             <input class="btn" type="reset" value="Supprimer" onclick="supprimer()">
                         </div>
                     </div>
@@ -134,18 +134,7 @@
             </form>
         </div>
     </section>
-    <main class="box calculateur">
-        <h3>Estimation de votre empreinte carbone pour :</h3>
-        <table id="sec-tab-pwd" width="100%">
-        <thead>
-            <tr class="mfb">
-                <th>Sur un trajet</th>
-                <th>Sur une semaine</th>
-                <th>Sur un mois</th>
-                <th>Sur un an</th>
-            </tr>
-        </thead>
-        </table>
+    <main id="Card">
     </main>
 </body>
 </html>
