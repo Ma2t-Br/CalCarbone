@@ -68,7 +68,7 @@ header{
         color: rgba(26, 188, 156, 1);
     }
 
-    .Icon-Menu {
+    .Phone-Menu {
         display: none;
     }
 
@@ -149,19 +149,26 @@ footer {
     }
 
 @media screen and (max-width: 1000px) {
-    header .navi {
+    header .navi_haut {
         display: none;
     }
 
-    .Icon-Menu {
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin: auto 20px auto 0;
-    }
+        .Phone-Menu {
+            display: block;
+            width: 30px;
+            margin: auto 0;
+        }
 
-    #Menu_langue {
-        width: 100px;
-    }
+        #Menu_langue {
+            width: 100px;
+        }
 
+        #navMenu {
+            width: 20px;
+            background-color: rgba(26, 188, 156, 1);
+        }
+
+    .navi_bas ul{
+        font-size: 21px;
+    }
 }
