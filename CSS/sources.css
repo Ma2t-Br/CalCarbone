@@ -1,0 +1,17 @@
+.sources{
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    margin: 18px 30px 156px 30px;
+    padding: 1px 15px 5px 15px;
+}
+.priori{
+    color: rgba(26, 188, 156, 1);
+    font-size: 30px;
+}
+.second{
+    list-style: none;
+    font-size: 25px;
+}
+.second li::before{
+    content: "-";
+}
