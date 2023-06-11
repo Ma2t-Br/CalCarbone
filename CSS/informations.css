@@ -1,0 +1,84 @@
+.intro{
+    text-align: center;
+    margin: 18px 30px 30px 30px;
+    padding: 1px 15px 5px 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    font-size: 16.3px;
+}
+    .intro h1{
+        color: rgba(26, 188, 156, 1);
+    }
+
+.tableau{
+    text-align: center;
+    margin: 40px 30px 20px 30px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    padding: 20px;
+}
+    .tableau table{
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-radius: 10px;
+        border: 1px solid black;
+        overflow: hidden;
+    }
+
+    
+    .tableau table th:not(:last-child),
+    .tableau table td:not(:last-child){
+        border-right: 1px solid black;
+    }
+
+    .tableau table thead tr th{
+        border-bottom: 1px solid black;
+    }
+
+    .tableau table>tbody>tr:not(:last-child)>td
+    {
+        border-bottom: 1px solid black;
+    }
+
+    .tableau caption h1{
+        margin: 0px 0px 25px 0px;
+    }
+    .col1{
+    width: 230px;
+    background-color: rgba(26, 188, 156, 1);
+    }
+
+.fin{
+    text-align: center;
+    margin: 18px 30px 30px 30px;
+    padding: 1px 15px 5px 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    font-size: 16.3px;
+}
+    .fin h1{
+        color: rgba(26, 188, 156, 1);
+    }
+    .fin div{
+        display: inline-block;
+        width: 500px;
+        padding-top: 20px;
+    }
+    .fin div img{
+        height: 60px;
+        width: 60px;
+    }
+    .fin p{
+        text-align: center;
+        white-space: pre-wrap;
+    }
+    .first_img{
+        padding-right: 40px;
+    }
+    .btwn_img{
+        padding: 0px 40px 0px;
+    }
+    .last_img{
+        padding-left: 40px;
+    }
