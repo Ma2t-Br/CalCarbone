@@ -21,31 +21,6 @@ function discover(visible){
     }
 }
 
-function generer_2(){
-    var monTableau = document.getElementById("sec-tab-calc");
-
-    var newLine = document.createElement("tr");
-
-    var travel = document.createElement("td");
-    var week = document.createElement("td");
-    var month = document.createElement("td");
-    var year = document.createElement("td");
-
-    /*duree.classList.add("DDV");*/
-
-    var EmpTravel = CalculeTravel(document.forms.Calculate);
-
-    travel.textContent = EmpTravel;
-    week.textContent = EmpTravel*7;
-    month.textContent = EmpTravel*30;
-    year.textContent = EmpTravel*365;
-
-    newLine.append(travel, week, month, year);
-    monTableau.appendChild(newLine);
-    
-    document.Calculate.reset();
-}
-
 function CalculeTravel(form){
     var Result = 0;
 
@@ -61,7 +36,7 @@ function CalculeTravel(form){
     Result += form.elements["bus"].value*data.Bus;
     Result += form.elements["voiture"].value*data.Voiture;
 
-    return Result;
+    return Result.toFixed(2);
 }
 
 function generer(){

@@ -171,4 +171,12 @@ footer {
     .navi_bas ul{
         font-size: 21px;
     }
+
+    footer div p {
+        display: none;
+    }
+
+    .navi_bas ul {
+        padding: 0px;
+    }
 }
