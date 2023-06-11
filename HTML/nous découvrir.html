@@ -10,7 +10,7 @@
 <body>
     <header>
         <div id="Logo-Comp">
-            <img src="../Sources/Logos/feuille_logo.png" width="50" height="50">
+            <img src="../Sources/Logos/feuille_logo.png" width="50" height="50" alt="">
             <h1 class="Logo">Calcarbone</h1>
         </div>
         <div id="Menu_langue">
@@ -21,8 +21,14 @@
                 <li><a href="./calculateur.html">Calculateur</a></li>
             </ul>
             </nav>
-            <img class="Icon-Menu" src="../Sources/Logos/Logo_Menu.svg.png" alt="Menu" onclick="">
-            <img class="langue" src="../Sources/Logos/france.png">
+            <div class="Phone-Menu">
+                <select name="navMenu" id="navMenu">
+                    <option value="accueil" onclick="window.location.href='./accueil.html'">Accueil</option>
+                    <option value="accueil" onclick="window.location.href='./informations.html'">S'informer</option>
+                    <option selected="selected" value="accueil" onclick="window.location.href='./calculateur.html'">Calculateur</option>
+                </select>
+            </div>
+            <img class="langue" src="../Sources/Logos/france.png"  alt="Langage">
         </div>
     </header>
     <section class="princip">
